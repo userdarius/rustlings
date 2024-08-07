@@ -5,10 +5,12 @@
 fn maybe_icecream(hour_of_day: u16) -> Option<u16> {
     // TODO: Complete the function body.
     if hour_of_day < 22 {
-        5
+        Some(5)
     } else if hour_of_day == 22 {
-        0
+        Some(0)
     } else if hour_of_day > 23 {
+        None
+    } else {
         None
     }
 }
